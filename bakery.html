@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakery</title>
+       <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-collapse: collapse;
+            margin: 50px;
+            padding: 20px;
+
+        }
+        header nav{
+            padding: 10px 30px 10px 30px ;
+            word-spacing: 50px;
+
+            margin-bottom: 10px;
+            /* border-radius: 30px; */
+        }
+        nav span {
+            border-width: 20px;
+        }
+        #cart{
+            float: right;
+            margin-left:10px;
+        }
+
+        #delivery{
+            float: right;
+            margin-left:10px;
+        }
+        nav button{
+            font-weight: bold;
+            line-height: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #pickup{
+            float:right;
+        }
+/* nav span{
+    border-width: 20px;
+    font-size: 1.2em;
+} */
+
+        img {
+            height: 310px;
+            width: 350px;
+        }
+
+        .bakery{
+            padding: 25px;
+            border-style: groove;
+            margin: 10px;
+            color: rgba(11, 24, 83, 0.856);
+            text-decoration: mediumblue;
+            font-size: 1.2em;
+            font-weight: bolder;
+            color: blueviolet;
+
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #f4f4f4;
+            line-height: 2em;
+            color: black;
+            margin-top: 20px;
+        }
+
+        body {
+            /* background-color: rgba(245, 245, 245, 0);
+        background-image: url(https://images.unsplash.com/photo-1590340056561-e6c0dfd03211?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg1fHxibHVlJTIwc2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: 100%; */
+            background-color: none;
+            color: #080707;
+            backface-visibility: visible;
+        }
+        nav a{
+            color:white;
+        }
+
+        a:link {
+            text-decoration-line: none;
+            color: rgb(12, 3, 4);
+        }
+
+        a:hover {
+            text-decoration-color: rgb(87, 51, 153);
+            /* text-decoration-line: underline; */
+            border-style: outset;
+        }
+
+        a:active {
+            text-decoration-color: rgb(0, 0, 3);
+        }
+
+        button{
+            cursor: pointer;
+        }
+
+        .button:hover {
+            text-decoration-line: underline;
+            padding: 2px
+        }
+
+        .button {
+            border-radius: 23px;
+            background-color: rgb(11, 24, 83, 0.856);
+            color: whitesmoke;
+            padding: 2px;
+        }
+
+        hr {
+            margin-top: 10px;
+            font-size: 2px;
+        }
+
+        .each {
+            font-size: 0.8em;
+        }
+
+        form{
+            float:right;
+            margin-top:-1.5em;
+            margin-right:1.5em;
+        }
+        nav form input{
+            margin-right: -4em;
+        }
+        footer{
+            background-color: rgba(58, 23, 122, 0.781);
+        }
+        footer a{
+            padding: 5px;
+            line-height: 2.5em;
+            margin: 1.2em;
+        }
+        .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(58, 23, 122, 0.781);
+   color: white;
+   text-align: center;
+        }
+        header{
+    background-color: rgba(58, 23, 122, 0.781);
+            line-height: 2.2em;
+}
+#title{
+    color: rgb(255, 115, 0);
+            font-size: 3em;
+            padding: 20px;
+            font-family: 'Fuggles', cursive;
+            font-weight: 600;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <span id="title"> Organo Freshita </span>
+        <nav>
+            <a href="">HOME</a>
+            <a href="">AISLES</a>
+             <a href="login1.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="bakery.html">Back</a>
+            <span id="cart"><button>Cart</button></span>
+            <span id="delivery"><button>Delivery</button></span>
+            <span id="pickup"><button>Pickup</button></span><br />
+
+
+        </nav>
+    </header>
+<h1>Bread and Bakery Products</h1>
+ <div class="container">
+
+
+        <div class="bakery">
+            <image
+                src="https://sob-prd-cdn-products.azureedge.net/media/image/product/en/medium/0062728600001.jpg" >
+                <br />
+                <a href="bagels.html"> Bagels
+                    </a>
+            </image> <br />
+
+            <sub>6UN-480gr</sub>
+            <br />
+            <hr />
+            $3.99
+            <br />
+            <button type="submit" class="button"> Add to cart </button>
+        </div>
+      <div class="bakery">
+            <image
+                src="https://product-images.metro.ca/images/hdb/hfd/9961696886814.jpg">
+                <br />
+                <a href="butter.html"> Butter Chocolatines
+            </image> <br />
+            </a>
+            <sub>4x60gr</sub>
+            <br />
+            <hr />
+            $4.99
+            <br />
+            <button type="submit" class="button"> Add to cart </button>
+        </div>
+     <div class="bakery">
+            <image
+                src="https://product-images.metro.ca/images/h10/hda/9033150136350.jpg">
+                <br />
+                <a href="madeline.html"> Madeleine Cakes
+                    </a>
+            </image> <br />
+            </a>
+            <sub>12 Un-280gr</sub>
+            <br />
+            <hr />
+            $4.19
+            <br />
+            <button type="submit" class="button"> Add to cart </button>
+        </div>
+      <div class="bakery">
+            <image
+                src="https://product-images.metro.ca/images/h16/h39/8860680552478.jpg">
+                <br />
+                <a href="muffins.html"> Berry delight muffins
+            </image> <br />
+            </a>
+            <sub>4 muffins-400gr</sub>
+            <br />
+            <hr />
+            $4.99
+            <br />
+            <button type="submit" class="button"> Add to cart </button>
+        </div>
+      <div class="bakery">
+            <image
+                src="https://product-images.metro.ca/images/h8e/h5f/8859791884318.jpg">
+                <br />
+                <a href="cake.html"> Frozen Gluten Free Chocolate Torte
+            </image> <br />
+            </a>
+            <sub>400gr</sub>
+            <br />
+            <hr />
+            $13.99
+            <br />
+            <button type="submit" class="button"> Add to cart </button>
+        </div>
+      <div class="bakery">
+            <image
+                src="https://product-images.metro.ca/images/h0f/he5/9519208529950.jpg">
+                <br />
+                <a href="englishm.html"> Plain English Muffins
+            </image> <br />
+            </a>
+            <sub>6 Un-342gr</sub>
+            <br />
+            <hr />
+            $2.79
+            <br />
+            <button type="submit" class="button"> Add to cart </button>
+        </div>
+
+        <footer><nav class="footer"><a href="">Contact us</a>
+        <a href="">Help Center</a>
+            <a href="">Find store</a></nav></footer>
+ </div>
+</body>
+</html>

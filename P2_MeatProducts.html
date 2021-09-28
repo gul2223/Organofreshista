@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Meats</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fruits_style.css" />
+    <script src="https://kit.fontawesome.com/7c227060ac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: rgba(224, 150, 150, 0.5)">
+    <header> Organo Freshista </header>
+    <h1 align="center"><strong>MEATS</strong></h1>
+    <a href="index.html"><button class="btn btn-primary save">Home</button></a>
+    <div class="container">
+
+        <div id="f1" class="box">
+            <a href="Beef.html">
+                <img class="image-style"
+                    src="https://thumbs.dreamstime.com/b/raw-meat-beef-steak-green-rustic-table-raw-meat-beef-steak-green-rustic-table-background-164197668.jpg"
+                    alt="picture of beef"><br>
+                <h5 id="p-name"><strong>BEEF &nbsp; <span class="price"> $11.57/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f1')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f2" class="box">
+            <a href="Chicken.html">
+                <img class="image-style"
+                    src="https://st4.depositphotos.com/1004373/24392/i/600/depositphotos_243929562-stock-photo-fresh-chicken-meat-ingredients-cooking.jpg"
+                    alt="picture of Chicken"><br>
+                <h5 id="p-name"><strong>CHICKEN &nbsp; <span class="price"> $7.00/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button type="button"  onclick ="added('f2')" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div  id="f3"class="box">
+            <a href="Lamb.html">
+                <img class="image-style"
+                    src="https://st2.depositphotos.com/2287637/6003/i/600/depositphotos_60032125-stock-photo-raw-lamb-meat.jpg"
+                    alt="picture of lamb"><br>
+                <h5 id="p-name"><strong>LAMB &nbsp; <span class="price"> $6.45/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f3')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f4" class="box">
+            <a href="Pork.html">
+                <img class="image-style"
+                    src="https://st2.depositphotos.com/3472015/7814/i/600/depositphotos_78144704-stock-photo-raw-fresh-meat.jpg"
+                    alt="picture of pork"><br>
+                <h5 id="p-name"><strong>PORK &nbsp; <span class="price"> $3.56/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f4')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f5" class="box">
+            <a href="Turkey.html">
+                <img class="image-style"
+                    src="https://thumbs.dreamstime.com/b/board-raw-turkey-ingredients-wooden-table-board-raw-turkey-ingredients-wooden-table-space-text-149090467.jpg"
+                    alt="picture of turkey"><br>
+                <h5 id="p-name"><strong>TURKEY &nbsp; <span class="price"> $5.75/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f5')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f6" class="box">
+            <a href="Venison.html">
+                <img class="image-style"
+                    src="https://img.freepik.com/free-photo/venison-raw-steak-from-wild-meat_89816-26851.jpg?size=626&ext=jpg&ga=GA1.2.1087057462.1625702400"
+                    alt="picture of venison"><br>
+                <h5 id="p-name"><strong>VENISON &nbsp; <span class="price"> $16.75/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f6')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer">&copy; Copyright Team Orango Freshista &nbsp; &nbsp; &nbsp;&nbsp; &reg; All rights reserved
+            <div>
+    </footer>
+<Script src="p2.js"></Script>
+</body>
+
+</html>

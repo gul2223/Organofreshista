@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        nav {
+            flex: 1;
+            /* background-color: lightblue;
+            border: 1px solid black; */
+            border-right: solid;
+        }
+
+
+        main {
+            display: flex;
+            grid-row: 2 / 13;
+        }
+
+        header {
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+            text-align: center;
+            font-size: 3em;
+            grid-column: 1 / 14;
+            padding: 20px;
+            font-family: 'Fuggles', cursive;
+            font-weight: 600;
+        }
+
+        ul li {
+            padding: 1.2em;
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+            margin-top: 1.2em;
+
+        }
+
+        ol li {
+            line-height: 4em;
+        }
+
+        a {
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+            text-decoration-line: none;
+        }
+
+        form {
+            margin: 30px;
+            flex: 10;
+        }
+
+
+
+        #delet {
+            margin-top: 20px;
+        }
+
+        span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(3, 0, 44);
+        }
+
+        body {
+            /* background-image: url(https://images.unsplash.com/photo-1621091211034-53136cc1eb32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNreSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60); */
+            background-size: 2000px 800px;
+            background-color: #99d0d0a1;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+            border-color: teal;
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+        }
+
+        #add{
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+            border-color: teal;
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+        }
+
+        #save {
+            float: left;
+            padding: 0px 10px 0px 10px;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 5px;
+        }
+    </style>
+    <script>
+        window.onbeforeunload = function() {
+   localStorage.setItem(name, $('#change1').val());
+   alert(name);
+        }
+        window.onload = function() {
+   var name = localStorage.getItem(name);
+        }
+        //Defining a listener for our button, specifically, an onclick handler
+function  productadd() {
+     //First things first, we need our text:
+     var text = document.getElementById("idea").value; //.value gets input values
+
+// // //Now construct a quick list element
+// var lis = text;
+
+// //Now use appendChild and add it to the list!
+// document.getElementById("list").appendChild(lis);
+if(text=="")
+alert("Please enter the product name");
+else
+alert(text + " is added to order.");
+}
+function adreitem1(){
+    var num = document.getElementById("change1").value;
+    if(num==0)
+    {
+    //     var td = event.target.parentNode; 
+    //   var tr = td.parentNode; // the row to be removed
+    //   tr.parentNode.removeChild(tr);
+    alert("Please enter the quantity!")
+    }
+    else
+    alert(num + " products are added to your order");
+}
+function adreitem2(){
+    var num = document.getElementById("change2").value;
+    if(num==0)
+    {
+    //     var td = event.target.parentNode; 
+    //   var tr = td.parentNode; // the row to be removed
+    //   tr.parentNode.removeChild(tr);
+    alert("Please enter the quantity!")
+    }
+    else
+    alert(num + " products are added to your order.");
+}
+function adreitem3(){
+    var num = document.getElementById("change3").value;
+    if(num==0)
+    {
+    //     var td = event.target.parentNode; 
+    //   var tr = td.parentNode; // the row to be removed
+    //   tr.parentNode.removeChild(tr);
+    alert("Please enter the quantity!")
+    }
+    else
+    alert(num + " products are added to your order.");
+}
+function adreitem4(){
+    var num = document.getElementById("change4").value;
+    if(num==0)
+    {
+    //     var td = event.target.parentNode; 
+    //   var tr = td.parentNode; // the row to be removed
+    //   tr.parentNode.removeChild(tr);
+    alert("Please enter the quantity!")
+    }
+    else
+    alert(num + " products are added to your order.");
+}
+function adreitem5(){
+    var num = document.getElementById("change5").value;
+    if(num==0)
+    {
+    //     var td = event.target.parentNode; 
+    //   var tr = td.parentNode; // the row to be removed
+    //   tr.parentNode.removeChild(tr);
+    alert("Please enter the quantity!")
+    }
+    else
+    alert(num + " products are added to your order.");
+}
+document.getElementById("change1").value = getSavedValue("change1");
+function saveValue(e){
+            var id = e.id;  // get the sender's id to save it . 
+            var val = e.value; // get the value. 
+            localStorage.setItem(id, val);// Every time user writing something, the localStorage's value will override . 
+        }
+
+        //get the saved value function - return the value of "v" from localStorage. 
+        function getSavedValue  (v){
+            if (!localStorage.getItem(v)) {
+                return "";// You can change this to your defualt value. 
+            }
+            return localStorage.getItem(v);
+        }
+    </script>
+    <link rel="icon"
+        href="https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfWzKHR8khU7lyYlGYyKXQY41NunTZx36Zm...f49Kh4H5FUOlVFRK4d43Sl6V4IThRph...zeEL9odBCA3k3VBFOQG">
+    <title>Organo Freshista</title>
+
+</head>
+
+<body>
+    <header> Organo Freshista </header>
+    <main>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="p9.html">
+                    <li> MANAGE ACCOUNTS</li>
+                </a>
+                <a href="P11_backstore.html">
+                    <li> BACK</li>
+                </a>
+            </ul>
+        </nav>
+        <form>
+            
+                <span>Order List</span>
+                <ol id = "list">
+                <li>2kg Apple  <input type="number" min="0" max="5" id = "change1"/> <button onclick="adreitem1()" onloadstart=""> Change Quantity</button></li>
+                <li>2lt Coke <input type="number" min="0" max="5" id = "change2" /> <button onclick="adreitem2()">  Change Quantity</button> </li>
+                <li>4lt Milk <input type="number" min="0" max="5" id = "change3" /> <button onclick="adreitem3()"> Change Quantity</button> </li>
+                <li>500gr Tomato <input type="number" min="0" max="5" id = "change4" /> <button onclick="adreitem4()"> Change Quantity</button> </li>
+                <li>2un Cupcakes <input type="number" min="0" max="5" id = "change5" /> <button onclick="adreitem5()"> Change Quantity</button> </li>
+            </ol>
+            <input type="text" id="idea" /> <input type="button" value = "Add Product" id = "add" onclick="productadd()"><br />
+            <button type="submit" id="save" onclick="confirm('Would you like to save your changes?')"> Save </button>
+        </form>
+    </main>
+</body>
+
+</html>

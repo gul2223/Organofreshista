@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Fruits</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fruits_style.css" />
+    <script src="https://kit.fontawesome.com/7c227060ac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header> Organo Freshista </header>
+    <h1 align="center"><strong>FRUITS</strong></h1>
+    <a href="index.html"><button class="btn btn-primary save">Home</button></a>
+    <div class="container">
+
+        <div id="f1" class="box">
+            <a href="apples.html">
+                <img class="image-style"
+                    src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFwcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="picture of an apple"><br>
+                <h5 id="p-name"><strong>APPLE &nbsp; <span class="price"> $2/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f1')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f2" class="box">
+            <a href="strawberry.html">
+                <img class="image-style"
+                    src="https://images.unsplash.com/photo-1594282241894-4da286138f44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHN0cmF3YmVycnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="picture of an strawberry"><br>
+                <h5 id="p-name"><strong>STRAWBERRY &nbsp; <span class="price"> $2.15/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button type="button"  onclick ="added('f2')" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div  id="f3"class="box">
+            <a href="orange.html">
+                <img class="image-style"
+                    src="https://images.unsplash.com/photo-1549888834-3ec93abae044?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG9yYW5nZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="picture of an orange"><br>
+                <h5 id="p-name"><strong>ORANGE &nbsp; <span class="price"> $1.20/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f3')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f4" class="box">
+            <a href="kiwi.html">
+                <img class="image-style"
+                    src="https://images.unsplash.com/photo-1624303837501-307f1b137559?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGtpd2l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="picture of an kiwi"><br>
+                <h5 id="p-name"><strong>KIWI &nbsp; <span class="price"> $1.75/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f4')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f5" class="box">
+            <a href="watermelon.html">
+                <img class="image-style"
+                    src="https://images.unsplash.com/photo-1526841535633-ef3be0b21fd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHdhdGVybWVsb25zfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="picture of an watermelon"><br>
+                <h5 id="p-name"><strong>WATERMELON &nbsp; <span class="price"> $0.75/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f5')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+        <div id="f6" class="box">
+            <a href="banana.html">
+                <img class="image-style"
+                    src="https://images.unsplash.com/photo-1574137907555-8e9ad5bc17fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGJhbmFuYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="picture of an banana"><br>
+                <h5 id="p-name"><strong>BANANA &nbsp; <span class="price"> $1.50/lb</span> </strong></h5>
+                <button type="button" class="btn btn-info"> More Details</button>
+            </a>
+            <input class="quantity" type="number" placeholder="Quantity" min=0>
+            <button onclick ="added('f6')" type="button" class="btn btn-success add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                &nbsp; ADD TO CART
+            </button>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer">&copy; Copyright Team Orango Freshista &nbsp; &nbsp; &nbsp;&nbsp; &reg; All rights reserved
+            <div>
+    </footer>
+<Script src="p2.js"></Script>
+</body>
+
+</html>

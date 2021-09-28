@@ -1,0 +1,65 @@
+header {
+    background-color: rgb(3, 0, 44);
+    color: rgb(255, 115, 0);
+    text-align: center;
+    font-size: 3em;
+    grid-column: 1 / 14;
+    padding: 20px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+}
+body{
+    background-color:rgba(51, 252, 45, 0.123);
+}
+
+.box{
+    border: solid 2px black;
+    margin: 10px;
+    width: 285px;
+    padding: 20px;
+}
+  
+button, input{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input.quantity{
+    margin-left:30px;
+    width: 100px;
+    
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.add-to-cart{
+    width: 245px;
+}
+.image-style{
+    width:245px;
+    height:200px;
+}
+
+
+h5#p-name{
+    text-align:center;
+}
+
+a:hover, a:visited, a{
+    text-decoration: none;
+    color: black;
+}
+
+span.price{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:darkorange;
+    
+}
+
+div.footer{
+    font-size: x-small;
+}
